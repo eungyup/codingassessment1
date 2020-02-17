@@ -1,0 +1,44 @@
+body{
+    /* Backup Background Color*/
+    background-color: #DDDDDD;
+    /* Background Image */
+    background-image: url(../images/background.jpeg);
+    /* background-repeat: no-repeat; */
+}
+
+img{
+    width: 125px;
+    margin-bottom: 10px;
+    /*Your code here*/
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div{
+    padding: 25px;
+    margin:5px;
+    /* YOUR CODE HERE */
+    justify-self: stretch;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px){
+    #mystuff{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    div:nth-child(odd){
+        /* YOUR CODE HERE */
+        border: 1px solid black;
+    }
+}
